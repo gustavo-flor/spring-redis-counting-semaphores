@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  shutdown: graceful
+spring:
+  main:
+    banner-mode: off
+  application:
+    name: spring-redis-counting-semaphores
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/spring-redis-counting-semaphores
+springdoc:
+  swagger-ui:
+    path: /
+  show-actuator: true
